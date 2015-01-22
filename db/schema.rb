@@ -11,6 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150122034602) do
+
+  create_table "followers", force: :cascade do |t|
+    t.string   "name"
+    t.string   "username"
+    t.string   "description"
+    t.integer  "followers_count"
+    t.integer  "twitter_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
 
 end
