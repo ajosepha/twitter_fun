@@ -1,4 +1,6 @@
+require 'twitter'
 class InitializeTwitter
+  puts "Hi"
   def new_client
     client = Twitter::REST::Client.new do |config|
       config.consumer_key        = "8uNN8y5huLbCmhrPgFYAtyQU1"
